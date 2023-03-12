@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 200vh;
+    width: 98.94vw;
+}
+
+#navbar{
+    background-color: red;
+    /* padding: 13px 14px; */
+}
+
+#navbar > ul{
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+}
+
+#navbar ul li{
+    font-family: 'Yeon Sung';
+    font-size: 2rem;
+    margin: 0px 2rem;   
+
+    color: white;
+}
+
+#navbar ul li a{
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+#navbar ul li a:visited {
+    color: white;
+}
+
+#navbar ul li a:hover {
+    margin: 0%;
+    color: cyan;
+    font-size: 3rem;
+}
+
+#banner_display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20%;
+    background: url("../static/banner1.png");
+    background-size: contain;
+    /* background-size: auto; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* opacity: 0.8; */
+    /* border: 2px solid black; */
+}
+
+#banner_display >p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+
+    text-shadow: 5px 5px 0px rgb(0, 0, 0), -5px -5px 0px black, 5px -5px black, -5px 5px black, 5px 0px black, -5px 0px black, 0px 5px black, 0px -5px black;
+}
+
+#mission_display{
+    height: 25%;
+    background-color: bisque;
+    padding-top: 5px;
+}
+
+#mission_display h1{
+    text-align: center;    
+}
+
+#mission_display .card{
+    border: 2px solid black;
+    border-radius: 10px;
+}
