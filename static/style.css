@@ -77,6 +77,7 @@ body{
 }
 
 #mission_display{
+    display: flex;
     height: 25%;
     background-color: bisque;
     padding-top: 5px;
@@ -87,6 +88,13 @@ body{
 }
 
 #mission_display .card{
+    display: inline-block;
+
     border: 2px solid black;
     border-radius: 10px;
+
+    width: 30%;
+
+    margin: 5px auto;
+
 }
