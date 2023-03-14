@@ -1,19 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
 
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: 'Yeon Sung';
+}
+
+:root {
+    --MAINCLOR: #5e0505;
 }
 
 body{
     height: 200vh;
-    width: 98.94vw;
+    width: 100%;
 }
 
 #navbar{
-    background-color: red;
+    background-color: var(--MAINCLOR);
     /* padding: 13px 14px; */
 }
 
@@ -26,7 +30,7 @@ body{
 
 #navbar ul li{
     font-family: 'Yeon Sung';
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0px 2rem;   
 
     color: white;
@@ -45,8 +49,8 @@ body{
 
 #navbar ul li a:hover {
     margin: 0%;
-    color: cyan;
-    font-size: 3rem;
+    color: orange;
+    font-size: 2.5rem;
 }
 
 #banner_display{
@@ -54,7 +58,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     height: 20%;
-    background: url("../static/banner1.png");
+    background: url("./static/banner1.png");
     background-size: contain;
     /* background-size: auto; */
     background-size: cover;
@@ -77,24 +81,84 @@ body{
 }
 
 #mission_display{
-    display: flex;
     height: 25%;
-    background-color: bisque;
-    padding-top: 5px;
+    width: 70%;
+    margin: auto;
+    padding-top: 15px;
+;
 }
 
 #mission_display h1{
-    text-align: center;    
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--MAINCLOR);
 }
 
-#mission_display .card{
-    display: inline-block;
+#mission_display .cards{
+    display: flex;
 
-    border: 2px solid black;
-    border-radius: 10px;
+    height: 70%;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
 
+#mission_display .cards .card{
+    height: 85%;
     width: 30%;
+    
+    /* background-color: #ffe2b3; */
 
-    margin: 5px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 1px black;
 
+    font-size: 1.2rem;
+    text-align: center;
+
+    padding: 10px 5px;
+
+}
+
+#mission_display .cards .card:hover{
+    box-shadow: 0 0 4px 1px black;
+}
+
+#mission_display .cards .card div{
+    display: flex;
+    
+    width: 100%;
+    height: 70%;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding: 5px; */
+    /* border: 1px solid black; */
+
+    /* justify-content: center; */
+    padding-bottom: 0.5px;
+    margin: 15px auto 0px auto;
+}
+
+#mission_display .cards .card div img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#mission_display .cards .card div p{
+    width: 50%;
+    font-family: 'Shadows Into Light';
+    font-weight: bolder;
+    font-size: x-large;
+    color: rgb(34, 0, 255);
+
+}
+
+footer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: whitesmoke;
+    background-color: var(--MAINCLOR);
+    box-shadow: 0 0 1px 1px black;
 }
