@@ -17,18 +17,29 @@ body{
 }
 
 #navbar{
+    display: flex;
+    align-items: center;
     background-color: var(--MAINCLOR);
     /* padding: 13px 14px; */
+    height: 8vh;
+}
+
+
+.logo{
+    height: 80%;
+    margin: 0px 50px;
+}
+
+.logo a img{
+    max-height: 100%;
 }
 
 #navbar > ul{
-    display: flex;
-    justify-content: center;
-
     list-style: none;
 }
 
 #navbar ul li{
+    display: inline-block;
     font-family: 'Yeon Sung';
     font-size: 1.5rem;
     margin: 0px 2rem;   
