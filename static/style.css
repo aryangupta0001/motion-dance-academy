@@ -71,12 +71,10 @@ body{
     height: 20%;
     background: url("./static/banner1.png");
     background-size: contain;
-    /* background-size: auto; */
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* opacity: 0.8; */
-    /* border: 2px solid black; */
 }
 
 #banner_display >p{
@@ -117,8 +115,6 @@ body{
 #mission_display .cards .card{
     height: 85%;
     width: 30%;
-    
-    /* background-color: #ffe2b3; */
 
     border-radius: 10px;
     box-shadow: 0 0 2px 1px black;
@@ -142,10 +138,7 @@ body{
     
     align-items: center;
     justify-content: space-evenly;
-    /* padding: 5px; */
-    /* border: 1px solid black; */
 
-    /* justify-content: center; */
     padding-bottom: 0.5px;
     margin: 15px auto 0px auto;
 }
