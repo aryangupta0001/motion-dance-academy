@@ -68,13 +68,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 20%;
+    height: 25%;
     background: url("./static/banner1.png");
     background-size: contain;
-    
+    /* background-size: auto; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* opacity: 0.8; */
+    /* border: 2px solid black; */
 }
 
 #banner_display >p{
@@ -90,7 +92,7 @@ body{
 }
 
 #mission_display{
-    height: 25%;
+    height: 21%;
     width: 70%;
     margin: auto;
     padding-top: 15px;
@@ -106,7 +108,7 @@ body{
 #mission_display .cards{
     display: flex;
 
-    height: 70%;
+    height: 80%;
     width: 100%;
     justify-content: space-evenly;
     
@@ -115,6 +117,8 @@ body{
 #mission_display .cards .card{
     height: 85%;
     width: 30%;
+    
+    /* background-color: #ffe2b3; */
 
     border-radius: 10px;
     box-shadow: 0 0 2px 1px black;
@@ -155,6 +159,38 @@ body{
     font-size: x-large;
     color: rgb(34, 0, 255);
 
+}
+
+#sponsors_display{
+    height: 25%;
+    background-color: bisque;
+    padding-top: 15px;
+
+}
+
+#sponsors_display h1{
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--MAINCLOR);
+
+}
+
+#sponsors_display #sponsor_card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    height: 80%;
+
+}
+
+#sponsors_display #sponsor_card img{
+    max-height: 50%;
+    max-width: 20%;
+    
+    border: 1px solid black;
+    border-radius: 10px;
+    
 }
 
 footer{ 
