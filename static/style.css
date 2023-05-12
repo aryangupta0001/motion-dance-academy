@@ -4,7 +4,11 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Yeon Sung';
+}
+
+html{
+    height: 100vh;
+    border: 2px solid black;
 }
 
 :root {
@@ -12,71 +16,21 @@
 }
 
 body{
-    height: 200vh;
+    height: 100vh;
     width: 100%;
-}
-
-#navbar{
-    display: flex;
-    align-items: center;
-    background-color: var(--MAINCLOR);
-    /* padding: 13px 14px; */
-    height: 8vh;
-}
-
-
-.logo{
-    height: 80%;
-    margin: 0px 50px;
-}
-
-.logo a img{
-    max-height: 100%;
-}
-
-#navbar > ul{
-    list-style: none;
-}
-
-#navbar ul li{
-    display: inline-block;
     font-family: 'Yeon Sung';
-    font-size: 1.5rem;
-    margin: 0px 2rem;   
-
-    color: white;
-}
-
-#navbar ul li a{
-    display: inline-block;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-decoration: none;
-}
-
-#navbar ul li a:visited {
-    color: white;
-}
-
-#navbar ul li a:hover {
-    margin: 0%;
-    color: orange;
-    font-size: 2.5rem;
 }
 
 #banner_display{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 25%;
+    height: 50vh;
     background: url("./static/banner1.png");
     background-size: contain;
-    /* background-size: auto; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* opacity: 0.8; */
-    /* border: 2px solid black; */
 }
 
 #banner_display >p{
@@ -84,7 +38,6 @@ body{
     text-align: center;
     font-size: 3rem;
     font-weight: bolder;
-    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
     -webkit-text-stroke-color: rgb(255, 255, 255);
     -webkit-text-stroke-width: 1px;
 
@@ -92,7 +45,7 @@ body{
 }
 
 #mission_display{
-    height: 21%;
+    height: 42vh;
     width: 70%;
     margin: auto;
     padding-top: 15px;
@@ -162,7 +115,7 @@ body{
 }
 
 #sponsors_display{
-    height: 25%;
+    height: 40vh;
     background-color: bisque;
     padding-top: 15px;
 
@@ -173,7 +126,7 @@ body{
     padding-bottom: 20px;
     color: var(--MAINCLOR);
 
-}
+}   
 
 #sponsors_display #sponsor_card{
     display: flex;
@@ -188,17 +141,7 @@ body{
     max-height: 50%;
     max-width: 20%;
     
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px;
     
-}
-
-footer{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    color: whitesmoke;
-    background-color: var(--MAINCLOR);
-    box-shadow: 0 0 1px 1px black;
 }
